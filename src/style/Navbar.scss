@@ -1,0 +1,257 @@
+@import "index.scss"; 
+.menu{
+    position:sticky;
+    top: 50px;
+    z-index: 2;
+    display:none;
+}
+.menu div{
+    background-color: rgb(250, 250, 250);
+    width: 40px;
+    height: 3px;
+    border-radius: 25%;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+.big-screen-nav, .small-screen-nav{
+    display: inline;
+}
+nav {
+  position: fixed;
+  background-color: rgb(30, 30, 30);
+  padding-right: 10%;
+  top: 0;
+  z-index: 1;
+  line-height: 50px;
+  height: 50px;
+  width: 100%;
+  text-align: right;
+   .main-nav{
+    justify-content: space-between;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    text-transform: capitalize;
+    pointer-events: auto;
+    
+}
+
+.lang ,.no-lang{
+  display: inline-block;
+    background-color: rgb(30, 30, 30);
+ 
+.flex-col{
+display: flex;
+flex-direction: column;
+margin-left: 10px;
+margin-right: 10px;
+width: fit-content;
+button{
+margin-right: 10px;
+margin-left: 10px;
+background-color: transparent;
+border: none;
+font-size: 15px;
+         &:hover{
+            color:$red;
+      }
+    }
+  }}
+.no-lang{
+.flex-col{
+.sr,.fr,.en{
+    display: none;
+    }
+}}
+.open-navlink{
+    display:none
+}
+  .navlink {
+    height: 60px;
+    margin-left: 20px;
+    display: inline-block;
+    // text-align: left;
+        &:hover {
+        color:$red;
+
+        cursor: pointer;
+
+        line-height: 50px;}
+  }
+}
+
+
+
+.logo-container{
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:40px; 
+    .logo{
+        background-image: url("../logo/logo-red.png");
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin:0px;
+        margin-left: 20px;
+        margin-top: 6px;
+    }
+ 
+}
+@media screen and (max-width:786px) {
+.big-screen-nav{
+    display: inline;
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+    margin-left: 85vw;
+}
+.big-screen-nav .nav{
+    display: none;     
+}
+.nav{
+    height: fit-content;
+    flex-direction: column;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    a{
+    display: block; 
+    margin: auto;
+    height: 30px;
+
+    }
+}
+.nav a:hover {
+    font-weight:600 ;
+    margin:auto;
+} 
+
+.main-nav{
+    margin: auto;
+    // text-align:right;
+}
+.lang{
+    margin: auto;
+    margin-top: -10px;
+}
+// .nav .logo-nav{
+//     width: 60px;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     height:60px; 
+//     margin-left:30px ;
+//     margin-top: 20%;
+   
+// }
+// .nav .logo-nav:hover{
+//     margin-left:30px ;
+//     margin-top: 20%;
+// }
+// .icon-nav{
+// padding: 5px;
+// font-size: 25px;
+// }
+.main-nav{
+padding: 0;
+}
+
+.logo-container{
+    width: 200px;
+    height:100px;
+    padding-top: 50px;
+    .logo{
+        margin:auto;
+        width: 100px;
+        height: 100px;
+      
+    } 
+    
+}
+} 
+
+@media screen and (max-width:480px) {
+.menu{
+    display:flex;
+    flex-direction: column;
+    margin-left: 80vw;
+}
+.big-screen-nav .nav{
+    display: none;     
+}
+.small-screen-nav .nav{
+    height: 100%;
+    width: 85%;
+    font-size: 25px; 
+    position: fixed; 
+    right: 0px;
+}
+.nav a:hover {
+    font-weight:600 ;
+    margin-top: 20px;
+} 
+.nav { a{  
+    margin-top: 20px;
+    border-bottom: 0.5px solid white;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+:hover {
+    font-weight:600 ;
+    margin-top: 20px;
+} 
+}}
+.open-lang{
+    padding-left: 10px;
+    margin-top: 15px;
+    font-size: 25px;
+    border-bottom: 0.5px solid white;
+    width: 250px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-nav{
+    svg{
+         margin-top: 5px;
+         margin-right:3px ;
+    }
+    text-align: center;
+    flex-direction: column;
+ .logo-container{
+     width: 100%;
+    height: 120px;
+    padding-top: 50px;
+    .navlink{
+    width: 80px;
+    height:80px;
+    margin:auto;
+    border: none;
+}
+}
+    }
+main{
+    top:-60px}
+
+.logo{
+    padding-left: 0px;
+    padding-top: 0px;
+ 
+}
+
+//  .nav .logo-nav:hover{
+//     margin:auto; 
+// }
+// .icon-nav{
+// padding: 5px;
+// font-size: 40px;
+// }
+.nav{
+    padding-right: 0px;
+}
+
+}  
